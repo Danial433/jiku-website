@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --jiku-bg: #d8f5e6;
+  --jiku-card: #f4fff9;
+  --jiku-accent: #7ed9ad;
+  --jiku-accent-dark: #3f9f73;
+  --jiku-text: #1f3329;
+  --jiku-muted: #6c8077;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(126, 217, 173, 0.35), transparent 35%),
+    linear-gradient(135deg, #e8fff3 0%, #c9f2df 100%);
+  color: var(--jiku-text);
+}
+
+.bg-pattern {
+  background-image:
+    radial-gradient(circle at 20px 20px, rgba(126, 217, 173, 0.22) 2px, transparent 2px);
+  background-size: 40px 40px;
+}
+
+.jiku-card {
+  background: rgba(244, 255, 249, 0.78);
+  border: 1px solid rgba(126, 217, 173, 0.35);
+  box-shadow: 0 20px 50px rgba(63, 159, 115, 0.16);
+  backdrop-filter: blur(16px);
+}
+
+.jiku-float {
+  animation: jikuFloat 4s ease-in-out infinite;
+}
+
+@keyframes jikuFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}

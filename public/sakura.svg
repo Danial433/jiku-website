@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <path fill="#ff8fab" d="M60 12
+    C70 25 90 16 96 35
+    C102 54 82 60 72 62
+    C84 73 83 96 62 91
+    C52 108 31 96 38 76
+    C18 75 15 52 34 45
+    C25 28 47 24 60 12Z"></path>
+  <path fill="#ff5f8f" opacity="0.55" d="M60 35
+    C66 44 78 38 81 50
+    C84 62 71 65 65 65
+    C73 73 70 85 60 78
+    C51 87 42 76 48 66
+    C37 66 35 53 47 50
+    C42 39 54 42 60 35Z"></path>
+  <path fill="none" stroke="#ffd6df" stroke-width="3" stroke-linecap="round" d="M60 60 C52 52 45 48 38 45
+       M60 60 C66 51 72 43 81 50
+       M60 60 C61 70 62 80 60 90
+       M60 60 C50 66 43 70 38 76
+       M60 60 C70 62 78 62 96 35"></path>
+</svg>
