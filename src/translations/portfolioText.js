@@ -91,7 +91,7 @@ export const text = {
 
           icon: "mingcute:home-4-fill",
 
-          github: "https://github.com/danial433/SAE_Thales17"
+          github: "https://github.com/danial433/thales17-showcase"
         },
 
         {
@@ -326,7 +326,7 @@ export const text = {
 
           icon: "mingcute:home-4-fill",
 
-          github: "https://github.com/danial433/SAE_Thales17"
+          github: "https://github.com/danial433/thales17-showcase"
         },
 
         {
