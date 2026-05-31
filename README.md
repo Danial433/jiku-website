@@ -1,8 +1,7 @@
-# Kyuiki's Portofolio Website!
+# Danial's Website!
 
 To start the preview.
 
 ```
-yarn install
-yarn dev
+
 ```
