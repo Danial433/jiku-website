@@ -33,21 +33,37 @@ export const text = {
       objectiveText:
         "Chaque projet, histoire et passion laisse derrière lui un petit souvenir. Jiku Labs est l'endroit où je garde ces souvenirs, avec les choses que j'apprends et que je crée au fil du temps.",
 
-      seeSkills: "Voir ma stack",
+      seeSkills: "Voir ce que j'aime",
       seeProjects: "Ouvrir le lab",
 
       skillsTitle: "Things I Enjoy",
-      devSkillsTitle: "💻 Coding & Projects",
-      devSkillsText:
-        "J'aime créer des sites web et expérimenter avec la technologie. La plupart de mes projets commencent comme de petites idées et évoluent petit à petit pendant que j'apprends de nouvelles choses.",
 
-      toolsTitle: "🏰 Worldbuilding",
-      toolsText:
-        "L'un de mes hobbies créatifs préférés est le worldbuilding dans Minecraft. J'aime construire des lieux, imaginer leur histoire et créer des mondes qui semblent vivants.",
+      interests: [
+        {
+          emoji: "🌸",
+          title: "Visual Novels & Manga",
+          text: "J'aime les histoires avec des personnages mémorables, une ambiance forte et des univers qui restent en mémoire.",
+        },
+        {
+          emoji: "💻",
+          title: "Code & Projets",
+          text: "J'aime créer des sites web et expérimenter avec la technologie. Je souhaite développer davantage de projets personnels.",
+        },
+        {
+          emoji: "🏰",
+          title: "Worldbuilding Minecraft",
+          text: "J'aime créer des lieux, imaginer leur histoire et construire des mondes qui semblent vivants.",
+        },
+        {
+          emoji: "☕",
+          title: "Expériences",
+          text: "Parfois une idée aléatoire à 2 heures du matin devient un petit projet ou quelque chose que je continue d'améliorer.",
+        },
+      ],
 
-      languagesTitle: "☕ Side Experiments",
-      languagesText:
-        "Que ce soit un site web, un projet Raspberry Pi ou une idée random à 2h du matin, j'aime transformer mes idées en quelque chose de réel et apprendre quelque chose en chemin.",
+      techTitle: "Tech que j'utilise",
+      techText:
+        "Outils et langages que j'utilise pour mes projets, mes expériences et mes travaux scolaires.",
 
       projectsTitle: "Project Logs",
 
@@ -86,22 +102,22 @@ export const text = {
       personalTitle: "Espace personnel",
       personalSubtitle: "Passions • Culture web • Créativité",
       personalText:
-        "Cette page est une partie plus personnelle de mon portfolio. Elle me permet de présenter quelques centres d’intérêt en dehors des projets académiques : manga, jeux vidéo, culture japonaise et esthétique web rétro.",
+        "Cette page est une partie plus personnelle de mon site. Elle me permet de présenter quelques centres d’intérêt : manga, visual novels, jeux vidéo, culture japonaise et esthétique web rétro.",
 
-      gamingTitle: "Jeux vidéo compétitifs",
-      gamingSubtitle: "Stratégie • Réflexes • Travail d’équipe",
+      gamingTitle: "Jeux vidéo",
+      gamingSubtitle: "Détente • Univers • Communautés",
       gamingText:
-        "J’aime les jeux compétitifs parce qu’ils demandent de la concentration, de la stratégie et une prise de décision rapide. C’est aussi un bon moyen de travailler la communication en équipe.",
+        "J'aime les jeux vidéo pour leurs univers, leurs mécaniques et les communautés qui se créent autour d'eux.",
 
-      mangaTitle: "Manga",
-      mangaSubtitle: "Histoires • Univers • Inspiration",
+      mangaTitle: "Manga & Visual Novels",
+      mangaSubtitle: "Histoires • Personnages • Ambiance",
       mangaText:
-        "J’aime découvrir des univers différents à travers les manga. Cela m’inspire aussi pour le design, l’ambiance visuelle et la créativité dans mes projets web.",
+        "J'aime découvrir des histoires à travers les manga et les visual novels. Les personnages, les ambiances et les univers m'inspirent souvent.",
 
       webTitle: "Web & expérimentation",
       webSubtitle: "Vue • Design • Templates",
       webText:
-        "J’aime tester de nouveaux outils et modifier des projets existants pour comprendre comment ils fonctionnent. Ce portfolio m’a permis de découvrir Vue, Vite, npm et GitHub Actions.",
+        "J’aime tester de nouveaux outils et modifier des projets existants pour comprendre comment ils fonctionnent. Ce site m’a permis de découvrir Vue, Vite, npm et GitHub Actions.",
 
       japanTitle: "Culture japonaise",
       japanSubtitle: "Langue • Culture • Découverte",
@@ -110,13 +126,13 @@ export const text = {
 
       currentlyTitle: "En ce moment",
       reading: "Lecture",
-      readingText: "Manga sur AniList",
+      readingText: "Manga & visual novels",
       games: "Jeux",
-      gamesText: "Jeux compétitifs",
+      gamesText: "Minecraft & autres jeux",
       learning: "Apprentissage",
       learningText: "Vue, Vite & design web",
       discovery: "Découverte",
-      discoveryText: "Culture japonaise",
+      discoveryText: "Japonais & culture web",
 
       blinkiesTitle: "Blinkies & badges",
       blinkiesText: "Une petite touche inspirée de l’esthétique old-web / Y2K.",
@@ -171,8 +187,7 @@ export const text = {
     home: {
       aboutTitle: "About Jiku",
       aboutCardTitle: "Who is Jiku?",
-      about1:
-        "Hi, I'm Danial — but online, I usually go by Jiku.",
+      about1: "Hi, I'm Danial — but online, I usually go by Jiku.",
       about2:
         "Jiku Labs is my personal corner of the internet: a place for stories, projects, experiments and things that inspire me.",
       about3:
@@ -186,21 +201,37 @@ export const text = {
       objectiveText:
         "Every project, story and hobby leaves behind a small memory. Jiku Labs is where I keep those memories, along with the things I'm learning and creating along the way.",
 
-      seeSkills: "View my stack",
+      seeSkills: "See what I like",
       seeProjects: "Open the lab",
 
       skillsTitle: "Things I Enjoy",
-      devSkillsTitle: "💻 Coding & Projects",
-      devSkillsText:
-        "I enjoy building websites and experimenting with technology. Most of my projects start as small ideas and slowly grow as I learn new things.",
 
-      toolsTitle: "🏰 Worldbuilding",
-      toolsText:
-        "One of my favourite creative hobbies is worldbuilding in Minecraft. I enjoy designing places, imagining their history and creating worlds that feel alive.",
+      interests: [
+        {
+          emoji: "🌸",
+          title: "Visual Novels & Manga",
+          text: "I enjoy stories with memorable characters, atmosphere, and worlds that stay with me after I finish them.",
+        },
+        {
+          emoji: "💻",
+          title: "Coding & Projects",
+          text: "I like building small websites and experimenting with technology. I want to start creating more of my own projects.",
+        },
+        {
+          emoji: "🏰",
+          title: "Minecraft Worldbuilding",
+          text: "I enjoy creating places, imagining their history, and building worlds that feel alive.",
+        },
+        {
+          emoji: "☕",
+          title: "Side Experiments",
+          text: "Sometimes a random idea at 2 AM becomes a small project, a page, or something I want to keep improving.",
+        },
+      ],
 
-      languagesTitle: "☕ Side Experiments",
-      languagesText:
-        "Whether it is a website, a Raspberry Pi project or a random idea at 2 AM, I enjoy turning ideas into reality and learning something new along the way.",
+      techTitle: "Tech I Use",
+      techText:
+        "Tools and languages I use for projects, experiments, and school work.",
 
       projectsTitle: "Project Logs",
 
@@ -239,22 +270,22 @@ export const text = {
       personalTitle: "Personal space",
       personalSubtitle: "Hobbies • Web culture • Creativity",
       personalText:
-        "This page is a more personal part of my portfolio. It lets me share some interests outside academic projects: manga, video games, Japanese culture and retro web aesthetics.",
+        "This page is a more personal part of my site. It lets me share some interests: manga, visual novels, video games, Japanese culture and retro web aesthetics.",
 
-      gamingTitle: "Competitive video games",
-      gamingSubtitle: "Strategy • Reflexes • Teamwork",
+      gamingTitle: "Video games",
+      gamingSubtitle: "Relaxing • Worlds • Communities",
       gamingText:
-        "I enjoy competitive games because they require focus, strategy and quick decision-making. They are also a good way to practice teamwork and communication.",
+        "I enjoy video games for their worlds, mechanics and the communities that form around them.",
 
-      mangaTitle: "Manga",
-      mangaSubtitle: "Stories • Worlds • Inspiration",
+      mangaTitle: "Manga & Visual Novels",
+      mangaSubtitle: "Stories • Characters • Atmosphere",
       mangaText:
-        "I enjoy discovering different worlds through manga. It also inspires me in terms of design, visual atmosphere and creativity for my web projects.",
+        "I enjoy discovering stories through manga and visual novels. The characters, atmosphere and worlds often inspire me.",
 
       webTitle: "Web & experimentation",
       webSubtitle: "Vue • Design • Templates",
       webText:
-        "I like testing new tools and modifying existing projects to understand how they work. This portfolio helped me discover Vue, Vite, npm and GitHub Actions.",
+        "I like testing new tools and modifying existing projects to understand how they work. This site helped me discover Vue, Vite, npm and GitHub Actions.",
 
       japanTitle: "Japanese culture",
       japanSubtitle: "Language • Culture • Discovery",
@@ -263,13 +294,13 @@ export const text = {
 
       currentlyTitle: "Currently",
       reading: "Reading",
-      readingText: "Manga on AniList",
+      readingText: "Manga & visual novels",
       games: "Games",
-      gamesText: "Competitive games",
+      gamesText: "Minecraft & other games",
       learning: "Learning",
       learningText: "Vue, Vite & web design",
       discovery: "Exploring",
-      discoveryText: "Japanese culture",
+      discoveryText: "Japanese & web culture",
 
       blinkiesTitle: "Blinkies & badges",
       blinkiesText: "A small touch inspired by old-web / Y2K aesthetics.",

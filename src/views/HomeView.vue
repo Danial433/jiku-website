@@ -15,9 +15,7 @@
           </h3>
 
           <p>{{ t.home.about1 }}</p>
-
           <p class="mt-2">{{ t.home.about2 }}</p>
-
           <p class="mt-2">{{ t.home.about3 }}</p>
         </div>
       </WindowContainer>
@@ -67,7 +65,7 @@
         <div class="my-4">
           <div class="grid md:grid-cols-2 gap-4">
             <div
-              v-for="interest in interests"
+              v-for="interest in t.home.interests"
               :key="interest.title"
               class="rounded-2xl border border-[#7ed9ad]/50 bg-[#f4fff9]/80 p-4 shadow-sm hover:-translate-y-1 duration-300"
             >
@@ -80,9 +78,9 @@
           <Separator icon="mingcute:code-fill" />
 
           <div class="mt-8 text-center">
-            <h3 class="text-2xl font-bold mb-2">Tech I Use</h3>
+            <h3 class="text-2xl font-bold mb-2">{{ t.home.techTitle }}</h3>
             <p class="opacity-80 mb-4">
-              Tools and languages I use for projects, experiments, and school work.
+              {{ t.home.techText }}
             </p>
 
             <Vue3Marquee class="rounded overflow-hidden" :duration="25">
@@ -140,29 +138,6 @@ import { text } from "@/translations/portfolioText";
 const { currentLanguage } = useLanguage();
 
 const t = computed(() => text[currentLanguage.value]);
-
-const interests = [
-  {
-    emoji: "🌸",
-    title: "Visual Novels & Manga",
-    text: "I enjoy stories with memorable characters, atmosphere, and worlds that stay with me after I finish them."
-  },
-  {
-    emoji: "💻",
-    title: "Coding & Projects",
-    text: "I like building small websites and experimenting with technology. I want to start creating more of my own projects."
-  },
-  {
-    emoji: "🏰",
-    title: "Minecraft Worldbuilding",
-    text: "I enjoy creating places, imagining their history, and building worlds that feel alive."
-  },
-  {
-    emoji: "☕",
-    title: "Side Experiments",
-    text: "Sometimes a random idea at 2 AM becomes a small project, a page, or something I want to keep improving."
-  }
-];
 
 const prog = {
   tech: {

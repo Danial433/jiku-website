@@ -1,6 +1,6 @@
 import { ref, computed } from "vue";
 
-const currentLanguage = ref(localStorage.getItem("language") || "fr");
+const currentLanguage = ref(localStorage.getItem("language") || "en");
 
 export function useLanguage() {
   function setLanguage(language) {
