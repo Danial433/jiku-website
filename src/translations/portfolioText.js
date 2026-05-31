@@ -65,34 +65,100 @@ export const text = {
       techText:
         "Outils et langages que j'utilise pour mes projets, mes expériences et mes travaux scolaires.",
 
-      projectsTitle: "Project Logs",
+      projectsTitle: "🧪 Archives de Jiku Labs",
+
+      projectsSubtitle:
+        "Une collection de choses que j'ai construites, cassées, apprises et parfois terminées.",
 
       projects: [
         {
+          log: "LOG 001",
+          status: "ACTIVE",
+          type: "Personal Website",
+          progress: 100,
+
+          title: "Jiku Labs",
+          description:
+            "Mon espace personnel sur le web, inspiré par les visual novels, la culture web rétro et les choses que j'aime.",
+
+          technologies: [
+            "Vue",
+            "Vite",
+            "GitHub Pages",
+            "DNS",
+            "Tailwind"
+          ],
+
+          icon: "mingcute:home-4-fill",
+
+          github: "https://github.com/danial433/SAE_Thales17"
+        },
+
+        {
+          log: "LOG 002",
+          status: "IN PROGRESS",
+          type: "Web + Raspberry Pi",
+          progress: 70,
+
           title: "SAE_Thales17",
+
           description:
-            "Plateforme web développée avec HTML, CSS, PHP et MySQL. Le projet comprend une gestion d’utilisateurs, un système de rôles, une galerie d’images et une future intégration avec Raspberry Pi.",
-          technologies: ["HTML", "CSS", "PHP", "MySQL"],
-          icon: "mingcute:code-fill",
-          github: "https://github.com/danial433/SAE_Thales17",
+            "Plateforme de gestion d'images connectée à une caméra Raspberry Pi. Inclut des comptes utilisateurs, des autorisations, une authentification et des galeries d'images.",
+
+          technologies: [
+            "PHP",
+            "MySQL",
+            "Raspberry Pi",
+            "Authentication",
+            "Sessions"
+          ],
+
+          icon: "mingcute:camera-fill"
         },
+
         {
-          title: "English Communication",
-          description:
-            "Projet non technique autour de la communication professionnelle en anglais : présentations, expression orale, vocabulaire professionnel et préparation à des situations d’entretien.",
-          technologies: ["Anglais", "Communication", "Présentation orale"],
-          icon: "mingcute:microphone-fill",
-          github: "",
-        },
-        {
+          log: "LOG 003",
+          status: "PROTOTYPE",
+          type: "IoT Project",
+          progress: 55,
+
           title: "LoRaFireGuard",
+
           description:
-            "Projet IoT utilisant la technologie LoRa pour transmettre des informations liées à la détection de risques d’incendie. Ce projet m’a permis de découvrir la transmission sans fil et les paramètres LoRa.",
-          technologies: ["LoRa", "IoT", "Arduino", "Capteurs"],
-          icon: "mingcute:signal-fill",
-          github: "",
+            "Système de surveillance de feux de forêt basé sur LoRa, conçu pour explorer la communication à longue portée et le déploiement de capteurs.",
+
+          technologies: [
+            "LoRa",
+            "Arduino",
+            "RSSI",
+            "IoT",
+            "Wireless"
+          ],
+
+          icon: "mingcute:fire-fill"
         },
-      ],
+
+        {
+          log: "LOG 004",
+          status: "COMPLETED",
+          type: "Embedded System",
+          progress: 100,
+
+          title: "Mini Assistant Santé",
+
+          description:
+            "Appareil de surveillance de santé abordable utilisant des capteurs pour suivre la température, la fréquence cardiaque, l'activité et la qualité de l'air.",
+
+          technologies: [
+            "Arduino",
+            "Sensors",
+            "LCD",
+            "Embedded Systems"
+          ],
+
+          icon: "mingcute:heart-fill"
+        }
+      ]
     },
 
     hobbies: {
@@ -233,34 +299,101 @@ export const text = {
       techText:
         "Tools and languages I use for projects, experiments, and school work.",
 
-      projectsTitle: "Project Logs",
+      projectsTitle: "🧪 Jiku Labs Archive",
 
+      projectsSubtitle:
+        "A collection of things I've built, broken, learned from, and occasionally finished.",
       projects: [
+
+      
         {
+          log: "LOG 001",
+          status: "ACTIVE",
+          type: "Personal Website",
+          progress: 100,
+
+          title: "Jiku Labs",
+          description:
+            "My personal corner of the internet inspired by visual novels, retro web culture and things I enjoy. Built to learn, experiment and express myself.",
+
+          technologies: [
+            "Vue",
+            "Vite",
+            "GitHub Pages",
+            "DNS",
+            "Tailwind"
+          ],
+
+          icon: "mingcute:home-4-fill",
+
+          github: "https://github.com/danial433/SAE_Thales17"
+        },
+
+        {
+          log: "LOG 002",
+          status: "IN PROGRESS",
+          type: "Web + Raspberry Pi",
+          progress: 70,
+
           title: "SAE_Thales17",
+
           description:
-            "Web platform developed with HTML, CSS, PHP and MySQL. The project includes user management, role management, an image gallery and a future Raspberry Pi integration.",
-          technologies: ["HTML", "CSS", "PHP", "MySQL"],
-          icon: "mingcute:code-fill",
-          github: "https://github.com/danial433/SAE_Thales17",
+            "Image management platform connected to a Raspberry Pi camera. Includes user accounts, permissions, authentication and image galleries.",
+
+          technologies: [
+            "PHP",
+            "MySQL",
+            "Raspberry Pi",
+            "Authentication",
+            "Sessions"
+          ],
+
+          icon: "mingcute:camera-fill"
         },
+
         {
-          title: "English Communication",
-          description:
-            "Non-technical project focused on professional communication in English: presentations, speaking practice, professional vocabulary and interview preparation.",
-          technologies: ["English", "Communication", "Oral presentation"],
-          icon: "mingcute:microphone-fill",
-          github: "",
-        },
-        {
+          log: "LOG 003",
+          status: "PROTOTYPE",
+          type: "IoT Project",
+          progress: 55,
+
           title: "LoRaFireGuard",
+
           description:
-            "IoT project using LoRa technology to transmit information related to fire risk detection. This project helped me discover wireless transmission and LoRa parameters.",
-          technologies: ["LoRa", "IoT", "Arduino", "Sensors"],
-          icon: "mingcute:signal-fill",
-          github: "",
+            "LoRa-based wildfire monitoring system designed to explore long-range communication and sensor deployment.",
+
+          technologies: [
+            "LoRa",
+            "Arduino",
+            "RSSI",
+            "IoT",
+            "Wireless"
+          ],
+
+          icon: "mingcute:fire-fill"
         },
-      ],
+
+        {
+          log: "LOG 004",
+          status: "COMPLETED",
+          type: "Embedded System",
+          progress: 100,
+
+          title: "Mini Assistant Santé",
+
+          description:
+            "Affordable health monitoring device using sensors to track temperature, heart rate, activity and air quality.",
+
+          technologies: [
+            "Arduino",
+            "Sensors",
+            "LCD",
+            "Embedded Systems"
+          ],
+
+          icon: "mingcute:heart-fill"
+        }
+      ]
     },
 
     hobbies: {

@@ -108,21 +108,26 @@
     </div>
 
     <div id="projects" class="mt-24 mb-16 scroll-mt-24">
-      <h2 class="text-3xl font-bold text-center">{{ t.home.projectsTitle }}</h2>
+      <h2 class="text-3xl font-bold text-center">
+        {{ t.home.projectsTitle }}
+      </h2>
+
+      <p
+        class="text-center opacity-70 max-w-2xl mx-auto mt-3 px-4"
+      >
+        {{ t.home.projectsSubtitle }}
+      </p>
+
       <Separator />
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <ProjectCardComp
-        v-for="project in t.home.projects"
-        :key="project.title"
-        :title="project.title"
-        :description="project.description"
-        :technologies="project.technologies"
-        :icon="project.icon"
-        :github="project.github"
-      />
+     <ProjectCardComp v-for="project in t.home.projects" :key="project.title" :log="project.log"
+        :status="project.status" :type="project.type" :progress="project.progress" :title="project.title"
+        :description="project.description" :technologies="project.technologies" :icon="project.icon"
+        :github="project.github" />
     </div>
+    
   </div>
 </template>
 
