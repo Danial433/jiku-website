@@ -17,9 +17,6 @@ My personal corner of the internet.
 
 https://dev.jikulabs.xyz
 
-## Screenshots
-
-(Add screenshots here)
 
 ## Built With
 
