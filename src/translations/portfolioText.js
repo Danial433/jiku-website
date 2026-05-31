@@ -74,7 +74,7 @@ export const text = {
             "Plateforme web développée avec HTML, CSS, PHP et MySQL. Le projet comprend une gestion d’utilisateurs, un système de rôles, une galerie d’images et une future intégration avec Raspberry Pi.",
           technologies: ["HTML", "CSS", "PHP", "MySQL"],
           icon: "mingcute:code-fill",
-          github: "https://github.com/danial433/portfolio",
+          github: "https://github.com/danial433/SAE_Thales17",
         },
         {
           title: "English Communication",
@@ -242,7 +242,7 @@ export const text = {
             "Web platform developed with HTML, CSS, PHP and MySQL. The project includes user management, role management, an image gallery and a future Raspberry Pi integration.",
           technologies: ["HTML", "CSS", "PHP", "MySQL"],
           icon: "mingcute:code-fill",
-          github: "https://github.com/danial433/portfolio",
+          github: "https://github.com/danial433/SAE_Thales17",
         },
         {
           title: "English Communication",

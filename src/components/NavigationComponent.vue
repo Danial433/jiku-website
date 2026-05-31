@@ -26,12 +26,14 @@
           <Icon
             v-motion
             :initial="{
-              scale: 0,
-              rotate: 180
+              scale: 0.4,
+              rotate: 180,
+              opacity: 0
             }"
-            :visible="{
+            :enter="{
               scale: 1,
               rotate: 0,
+              opacity: 1,
               transition: {
                 type: 'spring',
                 stiffness: 250,
@@ -41,7 +43,7 @@
               }
             }"
             :icon="'mingcute:' + nav.icon"
-            class="text-3xl sm:text-4xl inline"
+            class="text-3xl sm:text-4xl inline-block"
           />
         </router-link>
       </div>
@@ -52,9 +54,7 @@
           style="font-size: 12em"
           class="absolute -right-full -top-full text-[#3f9f73]"
           v-motion
-          :initial="{
-            rotate: -10
-          }"
+          :initial="{ rotate: -10 }"
           :enter="{
             rotate: 10,
             transition: {
@@ -67,7 +67,7 @@
 
         <button
           @click="toggleLanguage"
-          class="z-10 relative px-1.5 py-0.5 mb-1 bg-[#d8f5e6] text-[#3f9f73] rounded text-[10px] font-bold leading-none"
+          class="z-10 relative px-1.5 py-0.5 mb-1 bg-white/60 text-[#3f9f73] rounded text-[10px] font-bold leading-none"
         >
           {{ currentLanguage === "fr" ? "EN" : "FR" }}
         </button>
@@ -76,11 +76,13 @@
           class="z-10 relative hidden sm:block"
           v-motion
           :initial="{
-            scale: 0,
-            x: 200
+            scale: 0.4,
+            opacity: 0,
+            x: 120
           }"
           :enter="{
             scale: 1,
+            opacity: 1,
             x: 0,
             transition: {
               duration: 1000,

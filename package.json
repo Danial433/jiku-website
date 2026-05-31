@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@hongminhee/markdown-it-regexp": "^0.6.0",
+    "@iconify-json/devicon": "^1.2.62",
+    "@iconify-json/logos": "^1.2.11",
+    "@iconify-json/mingcute": "^1.2.7",
     "@tsparticles/slim": "^4.1.1",
     "@tsparticles/vue3": "^4.1.1",
     "@vueuse/core": "^12.4.0",
