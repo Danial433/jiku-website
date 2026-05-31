@@ -29,7 +29,7 @@
               <div class="absolute -inset-2 rounded-3xl bg-[#7ed9ad]/40 blur-xl"></div>
 
               <img
-                src="/danial.jpg"
+                src="/avatar.png"
                 v-motion
                 :initial="{ rotate: -8, scale: 0.85, opacity: 0 }"
                 :enter="{
