@@ -1,47 +1,56 @@
 <template>
   <div class="particles-layer">
-    <vue-particles id="jiku-particles" :options="options" />
+    <component
+      :is="'vue-particles'"
+      v-if="particlesReady"
+      id="jiku-particles"
+      :options="options"
+    />
   </div>
 </template>
 
 <script setup>
+import { getCurrentInstance, onMounted, ref } from "vue";
+
+const particlesReady = ref(false);
+
 const options = {
   fullScreen: {
-    enable: false,
+    enable: false
   },
   background: {
     color: {
-      value: "transparent",
-    },
+      value: "transparent"
+    }
   },
   fpsLimit: 60,
   particles: {
     number: {
-      value: 80,
+      value: 80
     },
     color: {
-      value: "#ff8fab",
+      value: "#ff8fab"
     },
     opacity: {
-      value: 0.8,
+      value: 0.8
     },
     size: {
       value: {
         min: 8,
-        max: 18,
-      },
+        max: 18
+      }
     },
     rotate: {
       value: {
         min: 0,
-        max: 360,
+        max: 360
       },
       direction: "random",
       animation: {
         enable: true,
         speed: 5,
-        sync: false,
-      },
+        sync: false
+      }
     },
     move: {
       enable: true,
@@ -50,24 +59,43 @@ const options = {
       random: true,
       straight: false,
       outModes: {
-        default: "out",
-      },
+        default: "out"
+      }
     },
-      shape: {
-          type: "image",
-          options: {
-              image: [
-                  {
-                      src: "/sakura.svg",
-                      width: 120,
-                      height: 120,
-                  },
-              ],
-          },
-      },
+    shape: {
+      type: "image",
+      options: {
+        image: [
+          {
+            src: "/sakura.svg",
+            width: 120,
+            height: 120
+          }
+        ]
+      }
+    }
   },
-  detectRetina: true,
+  detectRetina: true
 };
+
+onMounted(async () => {
+  const app = getCurrentInstance()?.appContext.app;
+
+  if (!app) return;
+
+  const [{ default: Particles }, { loadSlim }] = await Promise.all([
+    import("@tsparticles/vue3"),
+    import("@tsparticles/slim")
+  ]);
+
+  app.use(Particles, {
+    init: async (engine) => {
+      await loadSlim(engine);
+    }
+  });
+
+  particlesReady.value = true;
+});
 </script>
 
 <style scoped>
