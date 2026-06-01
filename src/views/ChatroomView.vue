@@ -348,7 +348,7 @@ async function startCharacterConversation() {
   ];
 
   try {
-    const response = await fetch("http://localhost:8787/chat", {
+    const response = await fetch("https://jiku-labs-api.jikulabs.workers.dev/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -411,7 +411,7 @@ async function sendMessage() {
   });
 
   try {
-    const response = await fetch("http://localhost:8787/chat", {
+    const response = await fetch("https://jiku-labs-api.jikulabs.workers.dev/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
