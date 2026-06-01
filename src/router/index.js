@@ -38,9 +38,9 @@ const router = createRouter({
           component: () => import("../views/DiaryView.vue")
         },
         {
-          path: "lab",
-          name: "lab",
-          component: () => import("../views/LabTerminalView.vue")
+          path: "chatroom",
+          name: "chatroom",
+          component: () => import("../views/ChatroomView.vue")
         }
       ]
     }

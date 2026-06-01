@@ -26,7 +26,7 @@ export const text = {
       about3:
         "J'aime les visual novels, les manga, le code et la création de mondes. Ce site est l'endroit où je rassemble les choses qui font partie de mon univers.",
 
-      educationTitle: "🌸 Visual Novels & Manga",
+      educationTitle: "Visual Novels & Manga",
       educationText:
         "J'aime les visual novels et les manga pour leurs histoires, leurs personnages et leurs univers. Certaines histoires restent avec moi longtemps après les avoir terminées et m'inspirent parfois pour mes propres idées.",
 
@@ -261,7 +261,7 @@ export const text = {
       about3:
         "I enjoy visual novels, manga, coding and building worlds. This website is where I collect the things that make me who I am.",
 
-      educationTitle: "🌸 Visual Novels & Manga",
+      educationTitle: "Visual Novels & Manga",
       educationText:
         "I enjoy visual novels and manga because of their storytelling, characters and worlds. Some stories stay with me long after I finish them and sometimes inspire ideas for my own projects.",
 

@@ -137,11 +137,11 @@ const navs = computed(() => [
     path: "/hobbies"
   },
 
-  // Lab route is currently in testing
+  // Chatroom route is currently in testing
   {
-    name: "Lab",
+    name: "Chatroom",
     icon: "terminal-fill",
-    path: "/lab"
+    path: "/chatroom"
   }
 
 ]);
