@@ -16,8 +16,8 @@ export const text = {
     },
 
     home: {
-      aboutTitle: "À propos de Jiku",
-      aboutCardTitle: "Qui est Jiku ?",
+      aboutTitle: "À propos de moi",
+      aboutCardTitle: "Qui suis-je ?",
       about1:
         "Salut, moi c'est Danial — mais en ligne, j'utilise souvent le pseudo Jiku.",
       about2:
@@ -251,8 +251,8 @@ export const text = {
     },
 
     home: {
-      aboutTitle: "About Jiku",
-      aboutCardTitle: "Who is Jiku?",
+      aboutTitle: "About Me",
+      aboutCardTitle: "Who am I ?",
       about1: "Hi, I'm Danial — but online, I usually go by Jiku.",
       about2:
         "This page is my personal corner of the internet: a place for stories, projects, experiments and things that inspire me.",
