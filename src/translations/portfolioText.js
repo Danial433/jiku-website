@@ -6,6 +6,7 @@ export const text = {
       projects: "Labs",
       skills: "Stack",
       hobbies: "Journal",
+      lab: "Lab"
     },
 
     hero: {
@@ -241,6 +242,7 @@ export const text = {
       projects: "Labs",
       skills: "Stack",
       hobbies: "Journal",
+      lab: "Lab"
     },
 
     hero: {

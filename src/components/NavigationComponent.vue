@@ -135,6 +135,14 @@ const navs = computed(() => [
     name: t.value.nav.hobbies,
     icon: "game-2-fill",
     path: "/hobbies"
+  },
+
+  // Lab route is currently in testing
+  {
+    name: "Lab",
+    icon: "terminal-fill",
+    path: "/lab"
   }
+
 ]);
 </script>
