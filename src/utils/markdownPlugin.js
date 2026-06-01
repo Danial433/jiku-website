@@ -16,8 +16,6 @@ export const Redaction = function (md) {
             let lastIndex = 0;
             let match;
 
-            console.log("text", text);
-
             // Process all matches within the text
             while ((match = regex.exec(text)) !== null) {
               const start = match.index;

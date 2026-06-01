@@ -13,8 +13,9 @@
 
       <div class="p-5">
         <p class="opacity-80 leading-relaxed">
-          I'm testing and experimenting with AI here because i'm that lonely
-         so I made some characters to chat with. You can also dump your ideas here to save them and maybe chat about them with the characters.
+          I'm experimenting with AI here, so I made a small character chat space.
+          You can also dump your ideas here to save them and maybe chat about them
+          with the characters.
         </p>
 
         <p class="text-sm opacity-60 mt-3">
@@ -212,7 +213,7 @@
                   {{ message.role === "user" ? "Jiku" : currentCharacter.name }}
                 </p>
 
-                <p>{{ message.text }}</p>
+                <MarkdownComponent :content="message.text" />
               </div>
             </div>
 
@@ -275,6 +276,9 @@
 <script setup>
 import { computed, ref, watch, onMounted } from "vue";
 import { characters } from "@/data/characters";
+import MarkdownComponent from "@/components/MarkdownComponent.vue";
+
+const API_URL = "https://api.jikulabs.xyz/chat";
 
 const selectedCharacterId = ref(localStorage.getItem("jiku-character") || "murasame");
 const characterMenuOpen = ref(false);
@@ -348,7 +352,7 @@ async function startCharacterConversation() {
   ];
 
   try {
-    const response = await fetch("https://jiku-labs-api.jikulabs.workers.dev/chat", {
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -411,7 +415,7 @@ async function sendMessage() {
   });
 
   try {
-    const response = await fetch("https://jiku-labs-api.jikulabs.workers.dev/chat", {
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
