@@ -13,7 +13,7 @@
 
       <div class="p-5">
         <p class="opacity-80 leading-relaxed">
-          I'm experimenting with AI here, so I made a small character chat space.
+          I'm experimenting with AI here, because I'm so lonely, I made a small character chat space.
           You can also dump your ideas here to save them and maybe chat about them
           with the characters.
         </p>
