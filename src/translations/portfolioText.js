@@ -9,7 +9,7 @@ export const text = {
     },
 
     hero: {
-      nickname: "[ Jiku Labs ]",
+      nickname: "[ Jiku ]",
       fullName: "/ loserjiku",
       description:
         "Un petit coin calme du web où je garde mes projets, mes idées, mes hobbies et mes expérimentations.",
@@ -21,7 +21,7 @@ export const text = {
       about1:
         "Salut, moi c'est Danial — mais en ligne, j'utilise souvent le pseudo Jiku.",
       about2:
-        "Jiku Labs est mon petit coin personnel sur Internet : un endroit pour les histoires, les projets, les expériences et les choses qui m'inspirent.",
+        "Ce site est mon petit coin personnel sur Internet : un endroit pour les histoires, les projets, les expériences et les choses qui m'inspirent.",
       about3:
         "J'aime les visual novels, les manga, le code et la création de mondes. Ce site est l'endroit où je rassemble les choses qui font partie de mon univers.",
 
@@ -31,7 +31,7 @@ export const text = {
 
       objectiveTitle: "Pourquoi ce site existe",
       objectiveText:
-        "Chaque projet, histoire et passion laisse derrière lui un petit souvenir. Jiku Labs est l'endroit où je garde ces souvenirs, avec les choses que j'apprends et que je crée au fil du temps.",
+        "Chaque projet, histoire et passion laisse derrière lui un petit souvenir. Ce site est l'endroit où je garde ces souvenirs, avec les choses que j'apprends et que je crée au fil du temps.",
 
       seeSkills: "Voir ce que j'aime",
       seeProjects: "Ouvrir le lab",
@@ -178,7 +178,7 @@ export const text = {
       mangaTitle: "Manga & Visual Novels",
       mangaSubtitle: "Histoires • Personnages • Ambiance",
       mangaText:
-        "J'aime découvrir des histoires à travers les manga et les visual novels. Les personnages, les ambiances et les univers m'inspirent souvent.",
+        "J'aime découvrir des histoires à travers les manga et les visual novels. Les personnages, les ambiances et les univers m'accrochent souvent et me donnent envie d'explorer davantage.",
 
       webTitle: "Web & expérimentation",
       webSubtitle: "Vue • Design • Templates",
@@ -188,7 +188,7 @@ export const text = {
       japanTitle: "Culture japonaise",
       japanSubtitle: "Langue • Culture • Découverte",
       japanText:
-        "Je commence aussi à m’intéresser à la langue japonaise et à certains aspects de la culture japonaise. C’est un centre d’intérêt que j’aimerais développer progressivement.",
+        "Je m'intéresse aussi à la langue japonaise et à certains aspects de la culture japonaise. C'est un intérêt que j'aimerais développer progressivement.",
 
       currentlyTitle: "En ce moment",
       reading: "Lecture",
@@ -244,7 +244,7 @@ export const text = {
     },
 
     hero: {
-      nickname: "[ Jiku Labs ]",
+      nickname: "[ Jiku ]",
       fullName: "/ loserjiku",
       description:
         "A quiet corner of the internet where I keep my projects, thoughts, hobbies and experiments.",
@@ -255,7 +255,7 @@ export const text = {
       aboutCardTitle: "Who is Jiku?",
       about1: "Hi, I'm Danial — but online, I usually go by Jiku.",
       about2:
-        "Jiku Labs is my personal corner of the internet: a place for stories, projects, experiments and things that inspire me.",
+        "This page is my personal corner of the internet: a place for stories, projects, experiments and things that inspire me.",
       about3:
         "I enjoy visual novels, manga, coding and building worlds. This website is where I collect the things that make me who I am.",
 
@@ -265,7 +265,7 @@ export const text = {
 
       objectiveTitle: "Why this site exists",
       objectiveText:
-        "Every project, story and hobby leaves behind a small memory. Jiku Labs is where I keep those memories, along with the things I'm learning and creating along the way.",
+        "Every project, story and hobby leaves behind a small memory. This is where I keep those memories, along with the things I'm learning and creating along the way.",
 
       seeSkills: "See what I like",
       seeProjects: "Open the lab",
@@ -314,7 +314,7 @@ export const text = {
 
           title: "Jiku Labs",
           description:
-            "My personal corner of the internet inspired by visual novels, retro web culture and things I enjoy. Built to learn, experiment and express myself.",
+            "This page is my personal corner of the internet inspired by visual novels, retro web culture and things I enjoy. Built to learn, experiment and express myself.",
 
           technologies: [
             "Vue",
@@ -403,7 +403,7 @@ export const text = {
       personalTitle: "Personal space",
       personalSubtitle: "Hobbies • Web culture • Creativity",
       personalText:
-        "This page is a more personal part of my site. It lets me share some interests: manga, visual novels, video games, Japanese culture and retro web aesthetics.",
+        "This page is a more personal part of my site. It lets me share some interests: manga, visual novels, video games and very little things",
 
       gamingTitle: "Video games",
       gamingSubtitle: "Relaxing • Worlds • Communities",
@@ -413,7 +413,7 @@ export const text = {
       mangaTitle: "Manga & Visual Novels",
       mangaSubtitle: "Stories • Characters • Atmosphere",
       mangaText:
-        "I enjoy discovering stories through manga and visual novels. The characters, atmosphere and worlds often inspire me.",
+        "I enjoy discovering stories through manga and visual novels. The characters, atmosphere and worlds often hook me in and make me want to explore more.",
 
       webTitle: "Web & experimentation",
       webSubtitle: "Vue • Design • Templates",
@@ -436,7 +436,7 @@ export const text = {
       discoveryText: "Japanese & web culture",
 
       blinkiesTitle: "Blinkies & badges",
-      blinkiesText: "A small touch inspired by old-web / Y2K aesthetics.",
+      blinkiesText: "A collection of buttons and badges i found.",
 
       mangaListTitle: "Manga list",
       entries: "entries",
