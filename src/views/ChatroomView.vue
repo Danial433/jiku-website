@@ -272,7 +272,7 @@ import { useIdentity } from "@/composables/useIdentity";
 
 const API_URL = "https://api.jikulabs.xyz/chat";
 
-const selectedCharacterId = ref(localStorage.getItem("jiku-character") || "murasame");
+const selectedCharacterId = ref(localStorage.getItem("jiku-character") || "shizuku");
 const characterMenuOpen = ref(false);
 const showNotice = ref(true);
 const { identity } = useIdentity();
