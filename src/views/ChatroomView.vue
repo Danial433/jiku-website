@@ -8,7 +8,9 @@
     >
       <div class="p-5 border-b border-[#7ed9ad]/40 bg-[#d7f5e6]/70">
         <p class="text-xs uppercase tracking-[0.3em] opacity-60">notice</p>
-        <h2 class="text-2xl font-bold mt-1">This page is actively under construction</h2>
+        <h2 class="text-2xl font-bold mt-1">
+          This page is actively under construction
+        </h2>
       </div>
 
       <div class="p-5">
@@ -176,14 +178,12 @@
                     class="w-full text-left p-3 hover:bg-[#d7f5e6] duration-200"
                     :class="selectedCharacterId === character.id ? 'bg-[#7ed9ad]/30' : ''"
                   >
-
-
-                      <div class="min-w-0">
-                        <p class="font-bold">{{ character.name }}</p>
-                        <p class="text-xs opacity-70 truncate">
-                          {{ character.shortDescription }}
-                        </p>
-                      </div>
+                    <div class="min-w-0">
+                      <p class="font-bold">{{ character.name }}</p>
+                      <p class="text-xs opacity-70 truncate">
+                        {{ character.shortDescription }}
+                      </p>
+                    </div>
                   </button>
                 </div>
               </div>
@@ -201,7 +201,7 @@
                 "
               >
                 <p class="text-xs uppercase tracking-[0.2em] opacity-50 mb-1">
-                  {{ message.role === "user" ? "Jiku" : currentCharacter.name }}
+                  {{ message.role === "user" ? identity.name : currentCharacter.name }}
                 </p>
 
                 <MarkdownComponent :content="message.text" />
@@ -268,12 +268,14 @@
 import { computed, ref, watch, onMounted } from "vue";
 import { characters } from "@/data/characters";
 import MarkdownComponent from "@/components/MarkdownComponent.vue";
+import { useIdentity } from "@/composables/useIdentity";
 
 const API_URL = "https://api.jikulabs.xyz/chat";
 
 const selectedCharacterId = ref(localStorage.getItem("jiku-character") || "murasame");
 const characterMenuOpen = ref(false);
 const showNotice = ref(true);
+const { identity } = useIdentity();
 
 const chatInput = ref("");
 const projectDump = ref("");
@@ -297,6 +299,13 @@ watch(selectedCharacterId, () => {
   localStorage.setItem("jiku-character", selectedCharacterId.value);
   startCharacterConversation();
 });
+
+watch(
+  () => identity.value.role,
+  () => {
+    startCharacterConversation();
+  }
+);
 
 function toggleCharacterMenu() {
   characterMenuOpen.value = !characterMenuOpen.value;
@@ -328,6 +337,19 @@ function deleteIdea(id) {
   }
 }
 
+function getCharacterOpeningPrompt() {
+  return `${currentCharacter.value.firstScenePrompt}
+
+Scene:
+${currentCharacter.value.scenario}
+
+Personality:
+${currentCharacter.value.personality}
+
+Speaking style:
+${currentCharacter.value.speakingStyle}`;
+}
+
 async function startCharacterConversation() {
   const characterAtStart = currentCharacter.value;
   const thinkingMessageId = crypto.randomUUID();
@@ -350,9 +372,10 @@ async function startCharacterConversation() {
       },
       body: JSON.stringify({
         personality: selectedCharacterId.value,
+        character: currentCharacter.value,
+        userProfile: identity.value,
         history: [],
-        message:
-          "Start the scene in character. The user came unexpectedly and you weren't prepared, so you greet them in character. Do not try to make the user start a conversation. You can also start with a thought. Keep it short and sweet, just a few sentences to set the mood."
+        message: getCharacterOpeningPrompt()
       })
     });
 
@@ -414,6 +437,8 @@ async function sendMessage() {
       body: JSON.stringify({
         message: text,
         personality: selectedCharacterId.value,
+        character: currentCharacter.value,
+        userProfile: identity.value,
         history: previousHistory
       })
     });

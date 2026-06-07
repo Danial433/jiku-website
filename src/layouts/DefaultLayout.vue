@@ -1,6 +1,7 @@
 <template>
   <div class="min-h-screen text-text relative overflow-hidden jiku-bg">
     <JikuParticles />
+    <EntranceOverlay />
 
     <NavigationComponent :top="true" />
 
@@ -25,6 +26,7 @@ import { RouterView } from "vue-router";
 import FooterComp from "@/components/FooterComp.vue";
 import NavigationComponent from "@/components/NavigationComponent.vue";
 import JikuParticles from "@/components/JikuParticles.vue";
+import EntranceOverlay from "@/components/EntranceOverlay.vue";
 </script>
 
 <style scoped>
