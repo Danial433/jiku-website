@@ -141,12 +141,6 @@
               class="flex items-center justify-between gap-3 p-4 border-b border-[#7ed9ad]/40 bg-[#d7f5e6]/50"
             >
               <div class="flex items-center gap-3 min-w-0">
-                <div
-                  class="w-11 h-11 rounded-2xl bg-[#d7f5e6] border border-[#7ed9ad]/50 flex items-center justify-center text-2xl shrink-0"
-                >
-                  {{ currentCharacter.emoji }}
-                </div>
-
                 <div class="min-w-0">
                   <p class="font-bold leading-tight">{{ currentCharacter.name }}</p>
                   <p class="text-xs opacity-50 mt-1">
@@ -161,7 +155,6 @@
                   type="button"
                   class="px-3 py-2 rounded-xl bg-white/70 border border-[#7ed9ad]/50 hover:bg-[#7ed9ad]/30 duration-200 flex items-center gap-2 font-bold text-sm"
                 >
-                  <span>{{ currentCharacter.emoji }}</span>
                   <span class="hidden sm:inline">{{ currentCharacter.name }}</span>
 
                   <Icon
@@ -183,8 +176,7 @@
                     class="w-full text-left p-3 hover:bg-[#d7f5e6] duration-200"
                     :class="selectedCharacterId === character.id ? 'bg-[#7ed9ad]/30' : ''"
                   >
-                    <div class="flex items-center gap-3">
-                      <span class="text-2xl">{{ character.emoji }}</span>
+
 
                       <div class="min-w-0">
                         <p class="font-bold">{{ character.name }}</p>
@@ -192,7 +184,6 @@
                           {{ character.shortDescription }}
                         </p>
                       </div>
-                    </div>
                   </button>
                 </div>
               </div>
