@@ -2,6 +2,7 @@
   <div class="min-h-screen text-text relative overflow-hidden jiku-bg">
     <JikuParticles />
     <EntranceOverlay />
+    <BackgroundMusic />
 
     <NavigationComponent :top="true" />
 
@@ -27,6 +28,7 @@ import FooterComp from "@/components/FooterComp.vue";
 import NavigationComponent from "@/components/NavigationComponent.vue";
 import JikuParticles from "@/components/JikuParticles.vue";
 import EntranceOverlay from "@/components/EntranceOverlay.vue";
+import BackgroundMusic from "../components/BackgroundMusic.vue";
 </script>
 
 <style scoped>

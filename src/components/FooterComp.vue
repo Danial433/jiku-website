@@ -5,7 +5,7 @@
         <div class="w-full relative">
           <h4>
             <b class="text-xl">
-              Jiku Labs
+              Jiku
               <span class="inline-block px-2 py-0.5 text-[#1f3329] bg-[#7ed9ad]/70 rounded-full text-sm">
                 PERSONAL SITE
               </span>
@@ -13,7 +13,7 @@
             © 2026
           </h4>
           <p class="text-sm opacity-80">
-            A quiet corner of the internet, made with Vue, Vite and Tailwind CSS.
+            My site made with Vue, Vite and Tailwind CSS.
           </p>
         </div>
 
@@ -32,12 +32,7 @@
         </div>
       </div>
 
-      <p class="text-sm opacity-60 mt-3">
-        <a href="https://github.com/kyuiki/kyuiki-website" target="_blank" rel="noopener noreferrer">
-          Original template
-          <Icon icon="mingcute:external-link-line" class="text-lg inline mb-1" />
-        </a>
-      </p>
+
     </div>
   </footer>
 </template>

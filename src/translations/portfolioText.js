@@ -66,7 +66,7 @@ export const text = {
       techText:
         "Outils et langages que j'utilise pour mes projets, mes expériences et mes travaux scolaires.",
 
-      projectsTitle: "🧪 Archives de Jiku Labs",
+      projectsTitle: "Projets",
 
       projectsSubtitle:
         "Une collection de choses que j'ai construites, cassées, apprises et parfois terminées.",
@@ -301,7 +301,7 @@ export const text = {
       techText:
         "Tools and languages I use for projects, experiments, and school work.",
 
-      projectsTitle: "🧪 Jiku Labs Archive",
+      projectsTitle: "Projects",
 
       projectsSubtitle:
         "A collection of things I've built, broken, learned from, and occasionally finished.",
@@ -328,7 +328,7 @@ export const text = {
 
           icon: "mingcute:home-4-fill",
 
-          github: "https://github.com/danial433/thales17-showcase"
+          github: "https://github.com/danial433/jiku-website"
         },
 
         {
@@ -337,7 +337,7 @@ export const text = {
           type: "Web + Raspberry Pi",
           progress: 70,
 
-          title: "SAE_Thales17",
+          title: "Thales_WEB",
 
           description:
             "Image management platform connected to a Raspberry Pi camera. Includes user accounts, permissions, authentication and image galleries.",
@@ -347,7 +347,6 @@ export const text = {
             "MySQL",
             "Raspberry Pi",
             "Authentication",
-            "Sessions"
           ],
 
           icon: "mingcute:camera-fill"
@@ -369,7 +368,8 @@ export const text = {
             "Arduino",
             "RSSI",
             "IoT",
-            "Wireless"
+            "Wireless",
+            "C++"
           ],
 
           icon: "mingcute:fire-fill"

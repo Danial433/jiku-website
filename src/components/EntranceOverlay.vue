@@ -94,6 +94,7 @@ function enterAsVisitor() {
 
   sessionStorage.setItem("jiku-entered", "true");
   showEntrance.value = false;
+  window.dispatchEvent(new Event("jiku-entered"));
 }
 
 function openIdentityPanel() {
@@ -135,6 +136,7 @@ async function verifyIdentity() {
 
     sessionStorage.setItem("jiku-entered", "true");
     showEntrance.value = false;
+    window.dispatchEvent(new Event("jiku-entered"));
   } catch (error) {
     identityError.value = "Could not verify identity right now.";
   } finally {
