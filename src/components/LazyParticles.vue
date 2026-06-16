@@ -28,6 +28,6 @@ onMounted(async () => {
 
   ParticlesComponent.value = Particles;
 
-  // Note: if this does not initialize correctly, we’ll adjust based on your current particle component.
+  // Note: if this does not initialize correctly, we can adjust based on our current particle component.
 });
 </script>
