@@ -1,10 +1,5 @@
-# Danial's Website!
-
-# 🌸 Jiku Labs
-
-My personal corner of the internet.
-
-
+# My site!
+My own personal site
 ## Live Site
 
 https://dev.jikulabs.xyz
